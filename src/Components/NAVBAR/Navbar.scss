@@ -1,0 +1,30 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: center;
+  .nav-links {
+    width: 80%;
+    padding: 1em 0 0.5em 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1em;
+    position: fixed;
+    button {
+      height: 3em;
+      width: 6.5em;
+      background-color: #38e4ae;
+      position: fixed;
+      top: 2em;
+      right: -10px;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      font-size: 1em;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #2ebb8e;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+  }
+}

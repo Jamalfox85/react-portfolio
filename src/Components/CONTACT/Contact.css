@@ -1,1 +1,143 @@
-/* No CSS *//*# sourceMappingURL=Contact.css.map */
+.contact-wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-wrapper .contact-container {
+  height: 75%;
+  width: 75%;
+  border: solid 2px white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.contact-wrapper .contact-container .contact-info {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2em;
+  background-color: #333;
+}
+
+.contact-wrapper .contact-container .contact-info .contact-data i {
+  font-size: 1em;
+}
+
+.contact-wrapper .contact-container .contact-info i {
+  font-size: 1.75em;
+  margin: 1em;
+}
+
+.contact-wrapper .contact-container .form-wrapper {
+  width: 65%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-wrapper .contact-container .form-wrapper label {
+  margin: 0 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-wrapper .contact-container .form-wrapper label input {
+  margin-top: 0.5em;
+  height: 2em;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-wrapper .contact-container .form-wrapper label input:hover {
+  cursor: pointer;
+}
+
+.contact-wrapper .contact-container .form-wrapper label input:focus {
+  background-color: white;
+  outline: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: none;
+}
+
+.contact-wrapper .contact-container .form-wrapper .form-input-tier1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-wrapper .contact-container .form-wrapper .form-input-tier1 .form-input-name {
+  width: 200px;
+}
+
+.contact-wrapper .contact-container .form-wrapper .form-input-tier1 .form-input-email {
+  width: 200px;
+}
+
+.contact-wrapper .contact-container .form-wrapper .form-input-subject {
+  width: 475px;
+}
+
+.contact-wrapper .contact-container .form-wrapper .form-input-message input {
+  height: 150px;
+  width: 475px;
+}
+
+.contact-wrapper .contact-container .form-wrapper .contact-submit-bttn {
+  height: 3em;
+  width: 6.5em;
+  background-color: #38e4ae;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.contact-wrapper .contact-container .form-wrapper .contact-submit-bttn:hover {
+  background-color: #2ebb8e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Contact.css.map */

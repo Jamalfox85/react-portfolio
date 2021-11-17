@@ -6,4 +6,14 @@
 body {
   background-color: #000;
   color: #fff;
+  font-family: arial;
+}
+a,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover,
+a:hover:visited {
+  color: #999;
 }

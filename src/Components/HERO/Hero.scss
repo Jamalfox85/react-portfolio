@@ -1,0 +1,23 @@
+.hero-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      margin: 5vh;
+    }
+    .hero-profile-photo {
+      height: 300px;
+      width: 300px;
+      background-image: url("../../Assets/hero-profile-photo.png");
+      background-size: cover;
+    }
+  }
+}

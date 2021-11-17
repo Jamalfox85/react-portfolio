@@ -1,0 +1,43 @@
+.navbar-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-wrapper .nav-links {
+  width: 80%;
+  padding: 1em 0 0.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1em;
+  position: fixed;
+}
+
+.navbar-wrapper .nav-links button {
+  height: 3em;
+  width: 6.5em;
+  background-color: #38e4ae;
+  position: fixed;
+  top: 2em;
+  right: -10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.navbar-wrapper .nav-links button:hover {
+  background-color: #2ebb8e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Navbar.css.map */
