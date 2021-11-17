@@ -7,13 +7,16 @@ body {
   background-color: #000;
   color: #fff;
   font-family: arial;
+  scroll-behavior: smooth;
 }
 a,
 a:visited {
   color: #fff;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover,
 a:hover:visited {
-  color: #999;
+  color: #F433AB;
+  transition: 0.4s ease;
 }

@@ -14,7 +14,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero-wrapper">
+    <div className="hero-wrapper" id="home">
       <div className="hero-main">
         <h1>Jamal Fox</h1>
         <div className='hero-profile-photo'></div>

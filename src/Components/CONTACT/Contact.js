@@ -1,25 +1,48 @@
-import React from "react";
+import { React, useRef } from "react";
 import "./Contact.css";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_wckmscd",
+        "template_x7ut42a",
+        form.current,
+        "user_R5QYF2K3Su4h1htQjU0ev"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div className="contact-wrapper">
+    <div className="contact-wrapper" id="contact">
       <div className="contact-container">
         <div className="contact-info">
           <h1>Let's Connect!</h1>
           <div className="contact-data">
             <div className="contact-data-phone">
               <a href="tel: 6785228843">
-                <i class="fas fa-phone"></i>(678) 522-8843
+                <i className="fas fa-phone"></i>(678) 522-8843
               </a>
             </div>
             <div className="contact-data-email">
               <a href="mailto: fox.jamal@outlook.com">
-                <i class="far fa-envelope"></i>Fox.Jamal@outlook.com
+                <i className="far fa-envelope"></i>Fox.Jamal@outlook.com
               </a>
             </div>
             <div className="contact-data-location">
-              <i class="fas fa-map-marker-alt"></i>Atlanta, GA
+              <i className="fas fa-map-marker-alt"></i>Atlanta, GA
             </div>
           </div>
           <div className="social-media">
@@ -28,42 +51,42 @@ const Contact = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-instagram"></i>
+              <i className="fab fa-instagram"></i>
             </a>
             <a
               href="https://twitter.com/JamalFoxDesigns"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </a>
             <a
               href="https://github.com/Jamalfox85"
               target="_blank"
               rel="noreferrer"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </a>
           </div>
         </div>
-        <form className="form-wrapper">
+        <form className="form-wrapper" ref={form} onSubmit={sendEmail}>
           <div className="form-input-tier1">
             <label className="form-input-name">
               Name:
-              <input type="text" name="name" maxlength="25" />
+              <input required type="text" name="name" maxLength="25" />
             </label>
             <label className="form-input-email">
               Email:
-              <input type="email" name="email" maxlength="30" />
+              <input required type="email" name="email" maxLength="30" />
             </label>
           </div>
           <label className="form-input-subject">
             Subject:
-            <input type="text" name="subject" />
+            <input required type="text" name="subject" />
           </label>
           <label className="form-input-message">
             Message:
-            <input type="textfield" name="message" />
+            <input required type="textfield" name="message" />
           </label>
           <input className="contact-submit-bttn" type="submit" value="Submit" />
         </form>
