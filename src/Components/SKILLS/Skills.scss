@@ -14,11 +14,9 @@
     align-items: center;
     border: solid 2px white;
     border-radius: 25px;
-    .skill-block {
-      height: 200px;
-      width: 200px;
-      background-color: blue;
-      margin: 2em;
+    i {
+      font-size: 5em;
+      margin: 0em 1em;
     }
   }
 }

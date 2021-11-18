@@ -34,10 +34,8 @@
   border-radius: 25px;
 }
 
-.skills-wrapper .skill-grid .skill-block {
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  margin: 2em;
+.skills-wrapper .skill-grid i {
+  font-size: 5em;
+  margin: 0em 1em;
 }
 /*# sourceMappingURL=Skills.css.map */

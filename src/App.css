@@ -17,6 +17,13 @@ a:visited {
 }
 a:hover,
 a:hover:visited {
-  color: #F433AB;
+  color: #f433ab;
   transition: 0.4s ease;
+}
+.section-header {
+  text-align: center;
+}
+.section-subheader {
+  color: #f433ab;
+  font-size: 1.6em;
 }
