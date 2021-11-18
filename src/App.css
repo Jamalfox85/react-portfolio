@@ -20,6 +20,27 @@ a:hover:visited {
   color: #f433ab;
   transition: 0.4s ease;
 }
+.bttn-blue {
+  height: 3em;
+  width: 6.5em;
+  background-color: #38e4ae;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
+.bttn-pink {
+  height: 3em;
+  width: 6.5em;
+  background-color: #f433ab;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+}
 .section-header {
   text-align: center;
 }

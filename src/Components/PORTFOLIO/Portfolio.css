@@ -1,1 +1,68 @@
-/* No CSS *//*# sourceMappingURL=Portfolio.css.map */
+.portfolio-wrapper {
+  height: 150vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-wrapper .project-wrapper {
+  height: 75%;
+  width: 75%;
+  border: solid 2px white;
+  border-radius: 25px;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio-wrapper .project-wrapper .portfolio-project {
+  height: 40%;
+  width: 40%;
+  border: solid 2px white;
+  border-radius: 8px;
+  position: relative;
+  padding: 1em;
+}
+
+.portfolio-wrapper .project-wrapper .portfolio-project img {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-wrapper .project-wrapper .portfolio-project .project-bttns {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio-wrapper .project-wrapper .portfolio-project .project-bttns .project-bttn {
+  margin: 0.5em;
+}
+/*# sourceMappingURL=Portfolio.css.map */
