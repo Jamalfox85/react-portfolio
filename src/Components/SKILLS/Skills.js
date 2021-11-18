@@ -4,16 +4,16 @@ import "./Skills.css";
 const Skills = () => {
   return (
     <div className="skills-wrapper">
-        <h1 className='skills-header'>Skills</h1>
+      <h1 className="skills-header section-header">Skills</h1>
       <div className="skill-grid">
-        <div className="skill-block">HTML</div>
-        <div className="skill-block">CSS</div>
-        <div className="skill-block">JS</div>
-        <div className="skill-block">React</div>
-        <div className="skill-block">SCSS</div>
-        <div className="skill-block">Bootstrap</div>
-        <div className="skill-block">Git</div>
-        <div className="skill-block">Github</div>
+        <i className="skill-block fab fa-html5"></i>
+        <i className="skill-block fab fa-css3-alt"></i>
+        <i className="skill-block fab fa-js-square"></i>
+        <i className="skill-block fab fa-react"></i>
+        <i className="skill-block fab fa-sass"></i>
+        <i className="skill-block fab fa-bootstrap"></i>
+        <i className="skill-block fab fa-git"></i>
+        <i className="skill-block fab fa-github"></i>
       </div>
     </div>
   );

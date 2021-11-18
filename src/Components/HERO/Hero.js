@@ -16,8 +16,19 @@ const Hero = () => {
   return (
     <div className="hero-wrapper" id="home">
       <div className="hero-main">
-        <h1>Jamal Fox</h1>
-        <div className='hero-profile-photo'></div>
+        <h1>
+          Hi, I'm{" "}
+          <span
+            style={{
+              color: "#16f2b4",
+              textShadow: "3px 3px 20px #F433AB",
+              fontWeight: "bold",
+            }}
+          >
+            Jamal Fox
+          </span>
+        </h1>
+        <div className="hero-profile-photo"></div>
         <h1>Web Developer &#38; Designer</h1>
       </div>
       <Particles
@@ -61,7 +72,7 @@ const Hero = () => {
           },
           particles: {
             color: {
-              value: "#38E4AE",
+              value: "#16f2b4",
             },
             links: {
               color: "transparent",
