@@ -1,22 +1,23 @@
-import Hero from "./Components/HERO/Hero";
 import "./App.css";
-import Navbar from "./Components/NAVBAR/Navbar";
-import Contact from "./Components/CONTACT/Contact";
-import Skills from "./Components/SKILLS/Skills";
-import About from "./Components/ABOUT/About";
-import Portfolio from "./Components/PORTFOLIO/Portfolio";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Landing from "./Pages/Landing";
+import GoalPlannerDetails from "./Pages/GoalPlannerDetails";
+import BruiserOutdoorsDetails from "./Pages/BruiserOutdoorsDetails";
+import PhotographyDetails from "./Pages/PhotographyDetails";
+import SelfCareDetails from "./Pages/SelfCareDetails";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Portfolio />
-        <Contact />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route exact path="/gpd" element={<GoalPlannerDetails />} />
+          <Route exact path="/bod" element={<BruiserOutdoorsDetails />} />
+          <Route exact path="/pd" element={<PhotographyDetails />} />
+          <Route exact path="/scd" element={<SelfCareDetails />} />
+        </Routes>
       </Router>
     </div>
   );
