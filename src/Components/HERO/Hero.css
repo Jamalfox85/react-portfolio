@@ -10,6 +10,17 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../../Assets/portfolio-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-wrapper .bg-overlay {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
 }
 
 .hero-wrapper .hero-main {
@@ -27,10 +38,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-wrapper .hero-main h1 {
   margin: 5vh;
+}
+
+.hero-wrapper .hero-main .jamalfox-header {
+  color: #16f2b4;
+  text-shadow: 3px 3px 20px #f433ab;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .hero-wrapper .hero-main .hero-profile-photo {

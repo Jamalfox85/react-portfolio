@@ -18,6 +18,7 @@
           justify-content: space-evenly;
   font-size: 1em;
   position: fixed;
+  z-index: 10;
 }
 
 .navbar-wrapper .nav-links button {
