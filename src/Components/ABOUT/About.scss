@@ -28,6 +28,12 @@
     }
     .about-right {
       width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .about-right-image {
+        width: 75%;
+      }
     }
   }
 }

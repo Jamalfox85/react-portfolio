@@ -42,10 +42,14 @@ a:hover:visited {
   font-weight: bold;
 }
 .section-header {
+  color: #16f2b4;
+  text-shadow: 3px 3px 20px #f433ab;
+  font-weight: bold;
+  /* font-size: 1.5em; */
   text-align: center;
 }
 .section-subheader {
-  color: #f433ab;
+  color: #fff;
   font-size: 1.6em;
 }
 .portfolio-project-header {

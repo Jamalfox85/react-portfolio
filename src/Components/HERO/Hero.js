@@ -51,9 +51,9 @@ const Hero = () => {
         <h1>
           <animated.span style={hiFadeIn}>Hi.</animated.span>
           <animated.span style={imFadeIn}> I'm </animated.span>
-          <animated.span style={nameFadeIn} className="jamalfox-header">
+          <animated.div style={nameFadeIn} className="jamalfox-header">
             Jamal Fox
-          </animated.span>
+          </animated.div>
         </h1>
         <animated.div
           className="hero-profile-photo"
