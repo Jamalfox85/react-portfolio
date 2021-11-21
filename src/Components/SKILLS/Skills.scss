@@ -5,18 +5,45 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  .skill-grid {
-    height: 75%;
-    width: 75%;
+  .skills-main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px white;
-    border-radius: 25px;
-    i {
-      font-size: 5em;
-      margin: 0em 1em;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 90%;
+
+    .skills-left {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .skill-grid {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        i {
+          font-size: 5em;
+          margin: 0 0.5em;
+          text-shadow: 2px 2px 20px #16f2b4;
+        }
+      }
+    }
+    .skills-right {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .skills-right-image {
+        width: 75%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: 2px 2px 20px #16f2b4;
+      }
     }
   }
 }

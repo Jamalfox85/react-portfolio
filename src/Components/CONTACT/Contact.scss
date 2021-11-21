@@ -1,15 +1,19 @@
 .contact-wrapper {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  .contact-header {
+    margin: 2em;
+  }
   .contact-container {
     height: 75%;
     width: 75%;
-    border: solid 2px white;
     display: flex;
     border-radius: 25px;
     overflow: hidden;
+    box-shadow: 2px 2px 20px #16f2b4;
     .contact-info {
       width: 35%;
       display: flex;
@@ -17,15 +21,28 @@
       justify-content: space-evenly;
       align-items: center;
       padding-top: 2em;
-      background-color: #333;
+      background-color: #fff;
+      color: #000;
       .contact-data {
         i {
           font-size: 1em;
+          color: #000;
+        }
+        a {
+          color: #000;
+        }
+        a:hover {
+          color: #2ebb8e;
         }
       }
       i {
         font-size: 1.75em;
         margin: 1em;
+        color: #000;
+      }
+      i:hover {
+        color: #2ebb8e;
+        transition: 0.3s ease;
       }
     }
     .form-wrapper {
@@ -46,6 +63,7 @@
           border: none;
           text-align: center;
           background-color: rgba(255, 255, 255, 0.5);
+          box-shadow: 2px 2px 20px #16f2b4;
         }
         input:hover {
           cursor: pointer;
@@ -78,7 +96,7 @@
       .contact-submit-bttn {
         height: 3em;
         width: 6.5em;
-        background-color: #38e4ae;
+        background-color: #16f2b4;
         border-radius: 8px;
         outline: none;
         border: none;

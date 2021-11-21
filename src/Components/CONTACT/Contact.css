@@ -3,6 +3,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -11,15 +15,20 @@
           align-items: center;
 }
 
+.contact-wrapper .contact-header {
+  margin: 2em;
+}
+
 .contact-wrapper .contact-container {
   height: 75%;
   width: 75%;
-  border: solid 2px white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 25px;
   overflow: hidden;
+  -webkit-box-shadow: 2px 2px 20px #16f2b4;
+          box-shadow: 2px 2px 20px #16f2b4;
 }
 
 .contact-wrapper .contact-container .contact-info {
@@ -38,16 +47,33 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2em;
-  background-color: #333;
+  background-color: #fff;
+  color: #000;
 }
 
 .contact-wrapper .contact-container .contact-info .contact-data i {
   font-size: 1em;
+  color: #000;
+}
+
+.contact-wrapper .contact-container .contact-info .contact-data a {
+  color: #000;
+}
+
+.contact-wrapper .contact-container .contact-info .contact-data a:hover {
+  color: #2ebb8e;
 }
 
 .contact-wrapper .contact-container .contact-info i {
   font-size: 1.75em;
   margin: 1em;
+  color: #000;
+}
+
+.contact-wrapper .contact-container .contact-info i:hover {
+  color: #2ebb8e;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .contact-wrapper .contact-container .form-wrapper {
@@ -86,6 +112,8 @@
   border: none;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 2px 2px 20px #16f2b4;
+          box-shadow: 2px 2px 20px #16f2b4;
 }
 
 .contact-wrapper .contact-container .form-wrapper label input:hover {
@@ -126,7 +154,7 @@
 .contact-wrapper .contact-container .form-wrapper .contact-submit-bttn {
   height: 3em;
   width: 6.5em;
-  background-color: #38e4ae;
+  background-color: #16f2b4;
   border-radius: 8px;
   outline: none;
   border: none;

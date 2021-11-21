@@ -42,8 +42,8 @@ a:hover:visited {
   font-weight: bold;
 }
 .section-header {
-  color: #16f2b4;
-  text-shadow: 3px 3px 20px #f433ab;
+  color: #fff;
+  text-shadow: 2px 2px 20px #16f2b4;
   font-weight: bold;
   /* font-size: 1.5em; */
   text-align: center;
@@ -51,6 +51,7 @@ a:hover:visited {
 .section-subheader {
   color: #fff;
   font-size: 1.6em;
+  text-align: left;
 }
 .portfolio-project-header {
   color: #000;

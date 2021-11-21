@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about-wrapper">
       <div className="about-header section-header">
-        <h1>About</h1>
+        <h1>ABOUT</h1>
       </div>
       <div className="about-main">
         <div className="about-left">
@@ -17,6 +17,7 @@ const About = () => {
               Systems at the end of 2021. After a few courses in web and app
               development my interest in coding was solidified.
             </p>
+            <br />
             <br />
             <p>
               My long-term goal is to start a small game studio with my younger

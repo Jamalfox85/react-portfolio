@@ -27,6 +27,7 @@ const Contact = () => {
 
   return (
     <div className="contact-wrapper" id="contact">
+      <h1 className="contact-header section-header">CONTACT</h1>
       <div className="contact-container">
         <div className="contact-info">
           <h1>Let's Connect!</h1>

@@ -37,11 +37,13 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-wrapper">
-      <h1 className="portfolio-header section-header">Portfolio</h1>
+      <h1 className="portfolio-header section-header">PORTFOLIO</h1>
       <div className="project-wrapper">
         {portfolioProjects.map((index, item) => (
           <div className="portfolio-project">
-            <h3 className='portfolio-project-header'>{portfolioProjects[item].title}</h3>
+            <h3 className="portfolio-project-header">
+              {portfolioProjects[item].title}
+            </h3>
             <img src={portfolioProjects[item].image} alt="test" />
             <div className="project-bttns">
               <Link to={portfolioProjects[item].details_bttn_link}>

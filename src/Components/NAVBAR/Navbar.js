@@ -15,10 +15,10 @@ const Navbar = () => {
       right: "-10px",
     },
     from: {
-      right: "-100px",
+      right: "-500px",
     },
     config: { duration: 1000 },
-    delay: 7000,
+    delay: 15000,
   });
 
   return (
