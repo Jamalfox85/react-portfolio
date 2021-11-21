@@ -4,11 +4,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("../../Assets/galaxy1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   .contact-header {
     margin: 2em;
   }
   .contact-container {
-    height: 75%;
+    height: 60%;
     width: 75%;
     display: flex;
     border-radius: 25px;

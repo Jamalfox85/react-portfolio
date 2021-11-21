@@ -5,7 +5,7 @@ import "./Hero.css";
 
 const Hero = () => {
   const backgroundAnimation = useSpring({
-    to: { opacity: 0.7 },
+    to: { opacity: 0.3 },
     from: { opacity: 1 },
     config: { duration: 2500 },
     delay: 5000,
