@@ -47,3 +47,31 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .skills-wrapper {
+    height: auto;
+    display: flex;
+    .skills-main {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+
+      .skills-left {
+        height: auto;
+        width: 100%;
+        .skill-grid {
+          margin: 0.5em;
+          i {
+            margin: 0.3em;
+          }
+        }
+      }
+      .skills-right {
+        width: 75%;
+        justify-content: flex-end;
+        margin: 1em;
+      }
+    }
+  }
+}

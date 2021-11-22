@@ -73,4 +73,38 @@
   -webkit-box-shadow: 2px 2px 20px #16f2b4;
           box-shadow: 2px 2px 20px #16f2b4;
 }
+
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    height: auto;
+  }
+  .about-wrapper .about-header {
+    position: relative;
+    top: 2em;
+  }
+  .about-wrapper .about-main {
+    height: auto;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-wrapper .about-main .about-left {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-wrapper .about-main .about-left .about-subheader {
+    margin: 1em;
+  }
+  .about-wrapper .about-main .about-left .about-left-main-text {
+    height: 75%;
+    width: 100%;
+  }
+  .about-wrapper .about-main .about-right {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=About.css.map */

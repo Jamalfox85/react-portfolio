@@ -40,3 +40,32 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .about-wrapper {
+    height: auto;
+    .about-header {
+      position: relative;
+      top: 2em;
+    }
+    .about-main {
+      height: auto;
+      width: 100%;
+      flex-direction: column-reverse;
+      .about-left {
+        width: 100%;
+        align-items: center;
+        .about-subheader {
+          margin: 1em;
+        }
+        .about-left-main-text {
+          height: 75%;
+          width: 100%;
+        }
+      }
+      .about-right {
+        width: 100%;
+      }
+    }
+  }
+}

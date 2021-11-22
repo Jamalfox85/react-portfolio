@@ -8,6 +8,7 @@ const gitlink = "https://github.com/Jamalfox85/BruiserOutdoors";
 const title = "Bruiser Outdoors";
 const screenshot = bruiserss
 const tech = ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'SQL', 'ASP.net']
+const livelink = "https://bruiser-outdoors.vercel.app/"
 
 const Bruiseroutdoors_details = () => {
   return (
@@ -18,6 +19,7 @@ const Bruiseroutdoors_details = () => {
         title={title}
         image={screenshot}
         tech={tech}
+        livelink={livelink}
       />
     </div>
   );

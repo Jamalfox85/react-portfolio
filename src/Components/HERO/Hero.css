@@ -60,5 +60,6 @@
   width: 300px;
   background-image: url("../../Assets/hero-profile-photo.png");
   background-size: cover;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=Hero.css.map */

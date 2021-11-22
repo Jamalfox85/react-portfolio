@@ -1,13 +1,19 @@
 import React from "react";
 import "./MainProjectDetails.css";
+import { Link } from "react-router-dom";
 
-const MainProjectDetails = ({ desc, gitlink, title, image, tech }) => {
+const MainProjectDetails = ({
+  desc,
+  gitlink,
+  title,
+  image,
+  tech,
+  livelink,
+}) => {
   return (
     <div className="mainprojectsdetails-wrapper">
       <div className="project-details-container">
-        <div className="project-details desc">
-          {desc}
-        </div>
+        <div className="project-details desc">{desc}</div>
         <div className="project-details title">
           <h1>{title}</h1>
         </div>
@@ -32,18 +38,18 @@ const MainProjectDetails = ({ desc, gitlink, title, image, tech }) => {
           </ul>
         </div>
         <div className="project-details project-detail-buttons">
-          <a href={gitlink} target="_blank" rel="noreferrer">
+          <a href={livelink} target="_blank" rel="noreferrer">
             <div className="project-detail-button pdb-view">VIEW</div>
           </a>
-          <a href={gitlink} target="_blank" rel="noreferrer">
+          <Link to="/#contact" target="_blank" rel="noreferrer">
             <div className="project-detail-button pdb-contact">CONTACT</div>
-          </a>
-          <a href={gitlink} target="_blank" rel="noreferrer">
+          </Link>
+          <Link to="/" target="_blank" rel="noreferrer">
             <div className="project-detail-button pdb-back">BACK</div>
-          </a>
-          <a href={gitlink} target="_blank" rel="noreferrer">
+          </Link>
+          {/* <a href="https://jamalfox.com" target="_blank" rel="noreferrer">
             <div className="project-detail-button pdb-back">BACK</div>
-          </a>
+          </a> */}
         </div>
         {/* <div className="project-details w3">w3</div> */}
       </div>

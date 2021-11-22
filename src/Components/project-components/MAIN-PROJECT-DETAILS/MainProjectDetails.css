@@ -199,12 +199,12 @@
           box-shadow: none;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link {
   width: 45%;
   height: 50px;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .project-detail-button {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .project-detail-button, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .project-detail-button {
   border: solid 2px white;
   border-radius: 25px;
   height: 50px;
@@ -226,18 +226,19 @@
 }
 
 .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-view:hover,
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-contact:hover {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-contact:hover, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-view:hover,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-contact:hover {
   background-color: #16f2b4;
   color: black;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back {
   color: #f433aa;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back:hover {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back:hover, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back:hover {
   background-color: #f433aa;
   color: black;
   -webkit-transition: 0.3s ease-in-out;
