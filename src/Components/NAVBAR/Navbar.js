@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import Testpdf from "../../Assets/Testpdf.pdf";
+import Testpdf from "../../Assets/Jamal_Fox_Resume.pdf";
 import { useSpring, animated } from "react-spring";
 
 const Navbar = () => {

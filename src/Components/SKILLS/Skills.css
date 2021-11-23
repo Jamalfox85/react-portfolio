@@ -68,6 +68,14 @@
   text-shadow: 2px 2px 20px #16f2b4;
 }
 
+.skills-wrapper .skills-main .skills-left .skill-grid .gatsby-icon {
+  height: 5em;
+  width: 5em;
+  color: white;
+  -webkit-box-shadow: 2px 2px 20px #16f2b4;
+          box-shadow: 2px 2px 20px #16f2b4;
+}
+
 .skills-wrapper .skills-main .skills-right {
   width: 50%;
   display: -webkit-box;
