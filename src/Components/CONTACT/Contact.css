@@ -110,22 +110,27 @@
           flex-direction: column;
 }
 
-.contact-wrapper .contact-container .form-wrapper label input {
+.contact-wrapper .contact-container .form-wrapper label input,
+.contact-wrapper .contact-container .form-wrapper label textarea {
   margin-top: 0.5em;
   height: 2em;
   border-radius: 8px;
   border: none;
-  text-align: center;
+  text-align: left;
+  padding-left: 2em;
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 2px 2px 20px #16f2b4;
           box-shadow: 2px 2px 20px #16f2b4;
+  font-weight: bold;
 }
 
-.contact-wrapper .contact-container .form-wrapper label input:hover {
+.contact-wrapper .contact-container .form-wrapper label input:hover,
+.contact-wrapper .contact-container .form-wrapper label textarea:hover {
   cursor: pointer;
 }
 
-.contact-wrapper .contact-container .form-wrapper label input:focus {
+.contact-wrapper .contact-container .form-wrapper label input:focus,
+.contact-wrapper .contact-container .form-wrapper label textarea:focus {
   background-color: white;
   outline: none;
   -webkit-transition: 0.3s ease;
@@ -147,13 +152,14 @@
   width: 200px;
 }
 
-.contact-wrapper .contact-container .form-wrapper .form-input-subject {
+.contact-wrapper .contact-container .form-wrapper .form-input-subject input {
   width: 475px;
 }
 
-.contact-wrapper .contact-container .form-wrapper .form-input-message input {
+.contact-wrapper .contact-container .form-wrapper .form-input-message textarea {
   height: 150px;
   width: 475px;
+  padding: 2em;
 }
 
 .contact-wrapper .contact-container .form-wrapper .contact-submit-bttn {
@@ -172,5 +178,57 @@
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    height: auto;
+  }
+  .contact-wrapper .contact-container {
+    height: 800px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-wrapper .contact-container .contact-info {
+    width: 100%;
+  }
+  .contact-wrapper .contact-container .form-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .form-wrapper .form-input-tier1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .form-wrapper .form-input-tier1 .form-input-name,
+  .form-wrapper .form-input-tier1 .form-input-email {
+    width: 75% !important;
+    margin-top: 1em !important;
+  }
+  .form-wrapper .form-input-subject {
+    width: 100% !important;
+  }
+  .form-wrapper .form-input-subject input {
+    width: 100% !important;
+  }
+  .form-wrapper .form-input-message {
+    width: 100% !important;
+  }
+  .form-wrapper .form-input-message textarea {
+    height: 150px;
+    width: 100% !important;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

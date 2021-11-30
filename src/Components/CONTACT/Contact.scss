@@ -61,19 +61,24 @@
         margin: 0 2em;
         display: flex;
         flex-direction: column;
-        input {
+        input,
+        textarea {
           margin-top: 0.5em;
           height: 2em;
           border-radius: 8px;
           border: none;
-          text-align: center;
+          text-align: left;
+          padding-left: 2em;
           background-color: rgba(255, 255, 255, 0.5);
           box-shadow: 2px 2px 20px #16f2b4;
+          font-weight: bold;
         }
-        input:hover {
+        input:hover,
+        textarea:hover {
           cursor: pointer;
         }
-        input:focus {
+        input:focus,
+        textarea:focus {
           background-color: rgb(255, 255, 255);
           outline: none;
           transition: 0.3s ease;
@@ -90,12 +95,15 @@
         }
       }
       .form-input-subject {
-        width: 475px;
+        input {
+          width: 475px;
+        }
       }
       .form-input-message {
-        input {
+        textarea {
           height: 150px;
           width: 475px;
+          padding: 2em;
         }
       }
       .contact-submit-bttn {
@@ -112,6 +120,51 @@
         background-color: #2ebb8e;
         transition: 0.3s ease;
         cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    height: auto;
+    .contact-container {
+      height: 800px;
+      // width: 75%;
+      flex-direction: column;
+      .contact-info {
+        width: 100%;
+      }
+      .form-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .form-wrapper {
+    display: flex;
+    .form-input-tier1 {
+      flex-direction: column;
+      width: 100%;
+      .form-input-name,
+      .form-input-email {
+        width: 75% !important;
+        margin-top: 1em !important;
+      }
+    }
+    .form-input-subject {
+      width: 100% !important;
+      input {
+        width: 100% !important;
+      }
+    }
+    .form-input-message {
+      width: 100% !important;
+      textarea {
+        height: 150px;
+        width: 100% !important;
       }
     }
   }

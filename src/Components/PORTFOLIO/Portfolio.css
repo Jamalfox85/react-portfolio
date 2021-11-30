@@ -69,4 +69,44 @@
 .portfolio-wrapper .project-wrapper .portfolio-project .project-bttns .project-bttn {
   margin: 0.5em;
 }
+
+@media screen and (max-width: 800px) {
+  .portfolio-wrapper {
+    height: auto;
+    margin: 5em 0;
+  }
+  .portfolio-wrapper .project-wrapper {
+    height: auto;
+    padding: 0.5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio-wrapper .project-wrapper .portfolio-project {
+    height: 200px;
+    width: 300px;
+    margin: 1.25em 0;
+  }
+  .portfolio-wrapper .project-wrapper .portfolio-project .project-bttns {
+    bottom: 0.2em;
+    right: 0.2em;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .portfolio-wrapper .project-wrapper .portfolio-project .project-bttns .project-bttn {
+    margin: 0.2em;
+  }
+}
 /*# sourceMappingURL=Portfolio.css.map */
