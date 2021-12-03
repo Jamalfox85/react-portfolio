@@ -22,13 +22,22 @@
       border-radius: 8px;
       position: relative;
       padding: 1em;
+      .portfolio-project-header {
+        text-shadow: 1px 1px 7px #2ebb8e;
+        position: relative;
+        z-index: 3;
+      }
+
       img {
         height: 100%;
         width: 100%;
         position: absolute;
         top: 0;
         left: 0;
-        z-index: -3;
+        z-index: 1;
+      }
+      img:hover {
+        cursor: pointer;
       }
       .project-bttns {
         position: absolute;
@@ -36,11 +45,16 @@
         right: 1em;
         display: flex;
         flex-direction: column;
+        z-index: 2;
 
         .project-bttn {
           margin: 0.5em;
         }
       }
+    }
+    .portfolio-project:hover {
+      transition: 0.3s ease-in-out;
+      box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.555);
     }
   }
 }

@@ -23,6 +23,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      alert('Thank you for sending a message! I\'ll do my best to respond to you within the next 24 hours')
   };
 
   return (

@@ -3,7 +3,7 @@ import MainProjectDetails from "../Components/project-components/MAIN-PROJECT-DE
 import selfcaress from "../Assets/selfcaremanifestoss.png";
 
 const description =
-  "This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. ";
+  "This site is the landing page for a mock self care blog.  ";
 const gitlink = "https://github.com/Jamalfox85/self-care-manifesto";
 const title = "Self Care Blog";
 const screenshot = selfcaress;

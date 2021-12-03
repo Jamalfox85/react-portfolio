@@ -178,6 +178,8 @@
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   cursor: pointer;
+  -webkit-box-shadow: 2px 2px 20px #2ebb8e;
+          box-shadow: 2px 2px 20px #2ebb8e;
 }
 
 @media screen and (max-width: 800px) {

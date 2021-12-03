@@ -3,7 +3,7 @@ import MainProjectDetails from "../Components/project-components/MAIN-PROJECT-DE
 import goalss from "../Assets/goalplannerss.png";
 
 const description =
-  "This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. ";
+  "This project asks the user to enter some cursory information including Name, Email, and Goal. From there the user is asked to define his target after a period of about 12 months. Next the user will enter milestones at the 3-month, 6-month, and 9-month mark. Following that, the user enters data for each month in between. After clicking submit, the page will show a 12 month scheduler that displays the users goals, milestones, and deadlines.  ";
 const gitlink = "https://github.com/Jamalfox85/goal-tracker";
 const title = "Goal Planner";
 const screenshot = goalss;

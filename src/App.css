@@ -29,10 +29,13 @@ a:hover:visited {
   border: none;
   font-size: 1em;
   font-weight: bold;
+  box-shadow: none;
 }
 .bttn-blue:hover {
   cursor: pointer;
   background-color: #2ebb8e;
+  box-shadow: 2px 2px 20px #2ebb8e;
+  transition: 0.3s ease;
 }
 .bttn-pink {
   height: 3em;
@@ -48,6 +51,8 @@ a:hover:visited {
 .bttn-pink:hover {
   cursor: pointer;
   background-color: #d32d93;
+  box-shadow: 2px 2px 20px #d32d93;
+  transition: 0.3s ease;
 }
 .section-header {
   color: #fff;

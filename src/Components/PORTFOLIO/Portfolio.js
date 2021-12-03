@@ -14,12 +14,14 @@ const Portfolio = () => {
       title: "Goal Planner",
       details_bttn_link: "/gpd",
       github_bttn_link: "https://github.com/Jamalfox85/goal-tracker",
+      live_link: "https://goal-tracker-tau.vercel.app/",
     },
     {
       image: bruiserss,
       title: "Bruiser Outdoors",
       details_bttn_link: "/bod",
       github_bttn_link: "https://github.com/Jamalfox85/BruiserOutdoors",
+      live_link: "https://bruiser-outdoors.vercel.app/",
     },
     // {
     //   image: photographyss,
@@ -32,6 +34,7 @@ const Portfolio = () => {
       title: "Self Care Blog",
       details_bttn_link: "/scd",
       github_bttn_link: "https://github.com/Jamalfox85/self-care-manifesto",
+      live_link: "https://self-care-manifesto.vercel.app/",
     },
   ];
 
@@ -44,21 +47,30 @@ const Portfolio = () => {
             <h3 className="portfolio-project-header">
               {portfolioProjects[item].title}
             </h3>
-            <img src={portfolioProjects[item].image} alt="test" />
+            <div
+              className="project-image-wrapper"
+              onClick={() => {
+                // window.location.href = "https://google.com";
+                window.open(portfolioProjects[item].live_link, "_blank");
+              }}
+            >
+              <img src={portfolioProjects[item].image} alt="test" />
+            </div>
             <div className="project-bttns">
               <Link
                 to={portfolioProjects[item].details_bttn_link}
                 target="_blank"
               >
-                <button className="project-bttn bttn-blue ">
-                  View Details
-                </button>
+                <button className="project-bttn bttn-blue ">Details</button>
               </Link>
               <button
                 className="project-bttn bttn-pink b"
                 onClick={() => {
                   // window.location.href = "https://google.com";
-                  window.open(portfolioProjects[item].github_bttn_link, "_blank");
+                  window.open(
+                    portfolioProjects[item].github_bttn_link,
+                    "_blank"
+                  );
                 }}
               >
                 Github
