@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  position: relative;
   .skills-main {
     display: flex;
     flex-direction: row-reverse;
@@ -54,7 +55,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .skills-wrapper {
     height: auto;
     display: flex;
@@ -66,6 +67,7 @@
       .skills-left {
         height: auto;
         width: 100%;
+
         .skill-grid {
           margin: 0.5em;
           i {
@@ -74,9 +76,12 @@
         }
       }
       .skills-right {
-        width: 75%;
-        justify-content: flex-end;
-        margin: 1em;
+        width: 100%;
+        justify-content: center;
+        .skills-right-image {
+          width: 50%;
+          margin: 2em 0;
+        }
       }
     }
   }

@@ -49,13 +49,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 1em;
-  font-size: 1.25em;
+  font-size: 0.9em;
   background-color: transparent;
   color: white;
   font-weight: bold;
   padding: 2em;
   height: 100%;
-  line-height: 1.5em;
 }
 
 .mainprojectsdetails-wrapper .project-details-container .title {
@@ -197,14 +196,17 @@
   background-color: transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
+  font-size: 0.85em;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link {
   width: 45%;
   height: 50px;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .project-detail-button, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .project-detail-button {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .project-detail-button,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .project-detail-button {
   border: solid 2px white;
   border-radius: 25px;
   height: 50px;
@@ -226,7 +228,8 @@
 }
 
 .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-view:hover,
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-contact:hover, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-view:hover,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-contact:hover,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-view:hover,
 .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-contact:hover {
   background-color: #16f2b4;
   color: black;
@@ -234,11 +237,13 @@
   transition: 0.3s ease-in-out;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back {
   color: #f433aa;
 }
 
-.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back:hover, .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back:hover {
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a .pdb-back:hover,
+.mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link .pdb-back:hover {
   background-color: #f433aa;
   color: black;
   -webkit-transition: 0.3s ease-in-out;
@@ -252,5 +257,95 @@
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3/5;
+}
+
+@media screen and (max-width: 800px) {
+  .mainprojectsdetails-wrapper {
+    height: 100%;
+  }
+  .mainprojectsdetails-wrapper .project-details-container {
+    height: auto;
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+    -ms-grid-rows: (1fr)[7];
+        grid-template-rows: repeat(7, 1fr);
+  }
+  .mainprojectsdetails-wrapper .project-details-container .desc {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1/12;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1/12;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .git {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .vid {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 11;
+    grid-column: 1/12;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 3;
+    grid-row: 4/7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    overflow: hidden;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .vid .project-details-image {
+    height: 100%;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .tech {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 3;
+    grid-column: 10/13;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .tech h1 {
+    margin: 0;
+    font-size: 1.25em;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .tech .project-tech-list {
+    margin-left: 0;
+    font-size: 0.75em;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 4;
+    grid-column: 5/9;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons a,
+  .mainprojectsdetails-wrapper .project-details-container .project-detail-buttons Link {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=MainProjectDetails.css.map */

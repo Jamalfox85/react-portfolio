@@ -22,7 +22,12 @@ const MainProjectDetails = ({
             <i className="fab fa-github"></i>
           </a>
         </div>
-        <div className="project-details vid">
+        <div
+          className="project-details vid"
+          onClick={() => {
+            // navigate("https://google.com");
+          }}
+        >
           <img
             src={image}
             alt="project-thumbnail"
@@ -39,7 +44,7 @@ const MainProjectDetails = ({
         </div>
         <div className="project-details project-detail-buttons">
           <a href={livelink} target="_blank" rel="noreferrer">
-            <div className="project-detail-button pdb-view">VIEW</div>
+            <div className="project-detail-button pdb-view">SITE</div>
           </a>
           <Link to="/#contact" target="_blank" rel="noreferrer">
             <div className="project-detail-button pdb-contact">CONTACT</div>

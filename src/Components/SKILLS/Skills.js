@@ -23,6 +23,7 @@ const Skills = () => {
             <i className="skill-block fab fa-bootstrap"></i>
             <i className="skill-block fab fa-git"></i>
             <i className="skill-block fab fa-github"></i>
+            <i className="skill-block fab fa-figma"></i>
           </div>
         </div>
         <div className="skills-right">

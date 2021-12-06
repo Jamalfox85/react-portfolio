@@ -23,6 +23,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+      alert('Thank you for sending a message! I\'ll do my best to respond to you within the next 24 hours')
   };
 
   return (
@@ -81,14 +82,18 @@ const Contact = () => {
               <input required type="email" name="email" maxLength="30" />
             </label>
           </div>
-          <label className="form-input-subject">
-            Subject:
-            <input required type="text" name="subject" />
-          </label>
-          <label className="form-input-message">
-            Message:
-            <input required type="textfield" name="message" />
-          </label>
+          <div className="form-input-subject">
+            <label>
+              Subject:
+              <input required type="text" name="subject" />
+            </label>
+          </div>
+          <div className="form-input-message">
+            <label>
+              Message:
+              <textarea required name="message" />
+            </label>
+          </div>
           <input className="contact-submit-bttn" type="submit" value="Submit" />
         </form>
       </div>
