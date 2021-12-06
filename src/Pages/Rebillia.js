@@ -3,11 +3,11 @@ import MainProjectDetails from "../Components/project-components/MAIN-PROJECT-DE
 import selfcaress from "../Assets/selfcaremanifestoss.png";
 
 const description =
-  "This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. This is the description of the project. This is the description of the product. This is the description. ";
-const gitlink = "https://github.com/Jamalfox85/self-care-manifesto";
-const title = "Self Care Blog";
+  "While working at Rebillia, LLC I was tasked with redesigning the company site. Through several iterations, I landed upon a clean, seo focused, static site built using Gatsby and React.";
+const gitlink = "https://github.com/Jamalfox85/rebillia";
+const title = "Rebillia";
 const screenshot = selfcaress;
-const tech = ["HTML", "CSS", "JavaScript"];
+const tech = ["JavaScript", "React.js", "Gatsby.js", "HTML", "CSS", "SASS"];
 const livelink = "https://self-care-manifesto.vercel.app/";
 
 const Selfcareblog_details = () => {

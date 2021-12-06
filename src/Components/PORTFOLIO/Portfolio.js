@@ -30,7 +30,7 @@ const Portfolio = () => {
     {
       image: selfcaremanifestoss,
       title: "Self Care Blog",
-      details_bttn_link: "/scd",
+      details_bttn_link: "/rebillia",
       github_bttn_link: "https://github.com/Jamalfox85/self-care-manifesto",
     },
   ];
@@ -58,7 +58,10 @@ const Portfolio = () => {
                 className="project-bttn bttn-pink b"
                 onClick={() => {
                   // window.location.href = "https://google.com";
-                  window.open(portfolioProjects[item].github_bttn_link, "_blank");
+                  window.open(
+                    portfolioProjects[item].github_bttn_link,
+                    "_blank"
+                  );
                 }}
               >
                 Github

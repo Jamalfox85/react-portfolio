@@ -5,7 +5,7 @@ import Landing from "./Pages/Landing";
 import GoalPlannerDetails from "./Pages/GoalPlannerDetails";
 import BruiserOutdoorsDetails from "./Pages/BruiserOutdoorsDetails";
 import PhotographyDetails from "./Pages/PhotographyDetails";
-import SelfCareDetails from "./Pages/SelfCareDetails";
+import Rebillia from "./Pages/Rebillia";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route exact path="/gpd" element={<GoalPlannerDetails />} />
           <Route exact path="/bod" element={<BruiserOutdoorsDetails />} />
           <Route exact path="/pd" element={<PhotographyDetails />} />
-          <Route exact path="/scd" element={<SelfCareDetails />} />
+          <Route exact path="/rebillia" element={<Rebillia />} />
         </Routes>
       </Router>
     </div>
