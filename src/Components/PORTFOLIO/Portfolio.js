@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import goalplannerss from "../../../src/Assets/goalplannerss.png";
 import bruiserss from "../../../src/Assets/bruiserss.png";
 // import photographyss from "../../../src/Assets/photographyss.png";
-import selfcaremanifestoss from "../../../src/Assets/selfcaremanifestoss.png";
+import rebilliass from "../../../src/Assets/rebilliass.png";
 
 const Portfolio = () => {
   const portfolioProjects = [
@@ -30,16 +30,16 @@ const Portfolio = () => {
     //   github_bttn_link: "https://github.com/Jamalfox85/Roman",
     // },
     {
-      image: selfcaremanifestoss,
-      title: "Self Care Blog",
+      image: rebilliass,
+      title: "Rebillia",
       details_bttn_link: "/rebillia",
-      github_bttn_link: "https://github.com/Jamalfox85/self-care-manifesto",
-      live_link: "https://self-care-manifesto.vercel.app/",
+      github_bttn_link: "https://github.com/Jamalfox85/rebillia",
+      live_link: "https://jfrebillia.gatsbyjs.io/",
     },
   ];
 
   return (
-    <div className="portfolio-wrapper">
+    <div className="portfolio-wrapper" id="portfolio">
       <h1 className="portfolio-header section-header">PORTFOLIO</h1>
       <div className="project-wrapper">
         {portfolioProjects.map((index, item) => (

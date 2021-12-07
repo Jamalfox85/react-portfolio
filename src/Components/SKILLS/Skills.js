@@ -5,7 +5,7 @@ import gatsbyicon from "../../Assets/gatsby.svg";
 
 const Skills = () => {
   return (
-    <div className="skills-wrapper">
+    <div className="skills-wrapper" id="skills">
       <h1 className="skills-header section-header">SKILLS</h1>
       <div className="skills-main">
         <div className="skills-left">
