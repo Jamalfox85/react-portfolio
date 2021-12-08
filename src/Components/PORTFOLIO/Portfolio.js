@@ -57,12 +57,12 @@ const Portfolio = () => {
               <img src={portfolioProjects[item].image} alt="test" />
             </div>
             <div className="project-bttns">
-              <Link
+              {/* <Link
                 to={portfolioProjects[item].details_bttn_link}
                 target="_blank"
               >
                 <button className="project-bttn bttn-blue ">Details</button>
-              </Link>
+              </Link> */}
               <button
                 className="project-bttn bttn-pink b"
                 onClick={() => {

@@ -13,10 +13,10 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route exact path="/gpd" element={<GoalPlannerDetails />} />
-          <Route exact path="/bod" element={<BruiserOutdoorsDetails />} />
-          <Route exact path="/pd" element={<PhotographyDetails />} />
-          <Route exact path="/rebillia" element={<Rebillia />} />
+          <Route path="/gpd" element={<GoalPlannerDetails />} />
+          <Route path="/bod" element={<BruiserOutdoorsDetails />} />
+          <Route path="/pd" element={<PhotographyDetails />} />
+          <Route path="/rebillia" element={<Rebillia />} />
         </Routes>
       </Router>
     </div>
